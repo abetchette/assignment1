@@ -1,0 +1,13 @@
+.user-form{
+    padding: 15px;
+
+}
+
+.user-form .form-group{
+    padding-bottom: 15px;
+
+}
+
+.user-form label{
+    display: block;
+}
