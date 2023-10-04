@@ -1,0 +1,85 @@
+.wrapper{
+    width: 33.3%;
+    border: 5px #672146 solid;
+    background-color: #AC145A;
+  }
+  .user-form{
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .user-area h1{
+    color: #ffffff;
+    margin-left: 15px;;
+  }
+  .user-form .form-group{
+    padding-bottom: 10px;
+  }
+  
+  .user-form label{
+    display: block;
+  }
+  
+  .user-form input[type="text"],input[type="password"],input[type='email']{
+    padding: 5px;
+    width: 70%;
+   }
+  
+  .submit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #672146;
+    border-radius: 50px; 
+    width: 150px;
+
+    }
+
+  .forgotten{
+    margin-left: 30px;
+
+  }
+
+  a:visited {
+    color: #ffffff;
+    background: #AC145A;
+  }
+
+  a:hover {
+    color: #672146;
+    background: #AC145A;
+  }
+
+  .submit-btn{
+    background: #672146;
+    color: #ffffff;
+    width: 20%;   
+    margin-left: 150px;
+    border: none;
+    padding: 10px; 
+    border-radius: 50px;
+    cursor: pointer;
+ 
+    
+  }
+  .action-btn{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #672146;
+    width: 150px;   
+    height: 50px; 
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+  }
+  .gray{
+    background: #eaeaea;
+    color: #672146;
+  }
+
+  .form-checkbox{
+    color: #fff;
+    padding: 15px;
+  }

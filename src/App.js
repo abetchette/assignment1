@@ -1,13 +1,12 @@
 import React from 'react';
-
-import UserForm from './UserForm.js';
-import './UserForm.css';
+import AuthForm from './AuthForm.js';
+import './AuthForm.css';
 
 
 function App() {
   return (
     <div className="App">
-      <UserForm />
+      <AuthForm />
     </div>
   );
 }

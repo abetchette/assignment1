@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import UserValudation from './UserValidation';
 
 function UserForm(){
     const [action, setAction] = useState('Register');
@@ -23,6 +24,17 @@ function UserForm(){
                         <label>Surname</label>
                         <input type = 'text' name = 'surName' placeholder = 'Surname' />
                     </div>}
+                    {action==='Login'?<div></div>:<div className="form-group">
+                        <label>Date Of Birth</label>
+                        <input type = 'date' name = 'dob' placeholder = 'D.o.B' />
+                    </div>}
+                    {action==='Login'?<div></div>:<div className="form-group">
+                        <label>Socialise</label>
+                        <select name="socialise">
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                    </div>}
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label>eMail</label>
@@ -36,7 +48,6 @@ function UserForm(){
                         <label>Confirm Password</label>
                         <input type = 'password' name = 'confPassword' placeholder = 'Confirm Password' />
                     </div>}
-                    
                 </div>
                     <div className={action==='Register'?"submit-btn gray":"submit-btn"} onClick={()=>{setAction('Register')}}>Register</div>
                     <div className={action==='Login'?"submit-btn gray":"submit-btn"} onClick={()=>{setAction('Login')}}>Login</div>
