@@ -83,3 +83,7 @@
     color: #fff;
     padding: 15px;
   }
+
+  .form-error{
+    colour:#E31C79
+  }

@@ -1,0 +1,40 @@
+.gym-wrapper{
+    width: 33.3%;
+    border: 5px #672146 solid;
+    background-color: #AC145A;
+  }
+  .gym-search-form{
+    color: #ffffff;
+    padding: 15px;
+  }
+  .gym-session-form{
+    color: #ffffff;
+    padding: 15px;
+  }
+  .gym-area h1{
+    color: #ffffff;
+    margin-left: 15px;;
+  }
+  .gym-form .form-group{
+    padding-bottom: 10px;
+  }
+  
+  .gym-form label{
+    display: block;
+  }
+  
+  .gym-form input[type="text"],input[type="password"],input[type='email'],input[type='textarea']{
+    padding: 5px;
+    width: 70%;
+   }
+  
+  .submit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #672146;
+    border-radius: 50px; 
+    width: 150px;
+
+    }
+

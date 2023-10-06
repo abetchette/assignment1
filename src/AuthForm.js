@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserValidation from './UserValidation';
+import ClimbLogo from './logo.png';
 
 function AuthForm(){
 
@@ -27,37 +28,37 @@ function AuthForm(){
 
     return(
         <div className = 'wrapper'>
-            <div className = 'user-area'>
+              <div className = 'user-area'>
                 <h1>{action}</h1>
                 <form onSubmit = {handleSumbit} className="user-form">
                     <div className="form-group">
                         <label for='usercode' name = 'usercode'>User Code</label>
                         <input type = 'text' name = 'usercode' placeholder = 'User Code' id='usercode' value = {formvalues.usercode} onChange={handleChange}/>
-                        {errors.usercode && <p>{errors.usercode}</p>}
+                        {errors.usercode && <p classname='form-error'>{errors.usercode}</p>}
                     </div>
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label for='forename' name = 'forname'>Forename</label>
                         <input type = 'text' name = 'forename' id='forename' placeholder = 'Forename' value = {formvalues.forename} onChange={handleChange}/>
-                        {errors.forename && <p>{errors.forename}</p>}
+                        {errors.forename && <p classname='form-error'>{errors.forename}</p>}
                     </div>}
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label for='surname' name='surname'>Surname</label>
                         <input type = 'text' name = 'surname' id='surname' placeholder = 'Surname' value = {formvalues.surname} onChange={handleChange}/>
-                        {errors.surname && <p>{errors.surname}</p>}
+                        {errors.surname && <p classname='form-error'>{errors.surname}</p>}
                     </div>}
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label for='dateofbirth' name='dateofbirth'>Date Of Birth</label>
                         <input type = 'date' name = 'datefbirth' id='dateofbirth' placeholder = 'D.o.B' value = {formvalues.dateofbirth} onChange={handleChange}/>
-                        {errors.dateofbirth && <p>{errors.dateofbirth}</p>}
+                        {errors.dateofbirth && <p classname='form-error'>{errors.dateofbirth}</p>}
                     </div>}
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label for='email' name='email'>eMail</label>
                         <input type = 'email' name = 'email' id='email' placeholder = 'eMail' value = {formvalues.email} onChange={handleChange}/>
-                        {errors.email && <p>{errors.email}</p>}
+                        {errors.email && <p classname='form-error'>{errors.email}</p>}
                     </div>}
                     {action==='Login'?<div></div>:
                     <div className="form-group">
@@ -70,13 +71,12 @@ function AuthForm(){
                     <div className="form-group">
                         <label for='password' name='password'>Password</label>
                         <input type = 'password' name = 'password' id='password' placeholder = 'Password' value = {formvalues.password} onChange={handleChange}/>
-                        {errors.usercode && <p>{errors.password}</p>}
+                        {errors.password && <p classname='form-error'>{errors.password}</p>}
                     </div>
                     {action==='Login'?<div></div>:
                     <div className="form-group">
                         <label for='confpassword' name='confpassword'>Confirm Password</label>
                         <input type = 'password' name = 'confpassword' id='confpassword' placeholder = 'Confirm Password' value = {formvalues.confpassword} onChange={handleChange}/>
-                        {errors.usercode && <p>{errors.confpassword}</p>}
                     </div>}
                     <br/>
                     <input type = 'submit' name = 'submit'/>

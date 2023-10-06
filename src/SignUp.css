@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    border: 5px #672146 solid;
+    background-color: #AC145A;
+    padding-bottom: 30px;
+    width: 33.3%;
+  }
+
+.header{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+    color: #672146;
+    
+  }
+
+  .text{
+    margin-left: 15px;
+    color: #D6D2C4;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .field{
+    margin-left: 15px;
+    color: #D6D2C4;
+  }
+
+ .container input[type="text"],input[type="password"],input[type='email'],[type='date']{
+    margin-left: 15px;
+    margin-bottom: 15PX;
+    padding: 5px;
+    width: 70%;
+    background-color: #D6D2C4;
+
+   }
+
+   .submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+   }
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    color: #D6D2C4;
+    background-color: #672146;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.chnge-action
+{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    color: #D6D2C4;
+    background-color: #672146;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.chnge-active
+{
+    color: #672146;
+    background-color: #D6D2C4;
+}
+
+select{
+  margin-left: 15px;
+  color: #672146;
+  background-color: #D6D2C4;
+  width: 70%;
+}
+option{
+  margin-left: 15px;
+  color: #672146;
+  background-color: #D6D2C4;
+  width: 70%;
+}
+
+textarea{
+  margin-left: 15px;
+  color: #672146;
+  background-color: #D6D2C4;
+  width: 70%;
+}
